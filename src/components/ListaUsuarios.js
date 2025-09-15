@@ -14,7 +14,7 @@ const ListaUsuarios = () => {
     const fetchUsuarios = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('https://obravisor-backend.onrender.com/usuarios', {
+        const res = await axios.get('https://obravisor.onrender.com/usuarios', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsuarios(res.data);

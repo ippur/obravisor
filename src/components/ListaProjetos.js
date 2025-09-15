@@ -14,7 +14,7 @@ const ListaProjetos = () => {
     const fetchProjetos = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('https://obravisor-backend.onrender.com/projetos', {
+        const res = await axios.get('https://obravisor.onrender.com/projetos', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setProjetos(res.data);

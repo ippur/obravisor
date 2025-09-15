@@ -32,7 +32,7 @@ const EditarProjeto = () => {
           return;
         }
 
-        const res = await axios.get(`https://obravisor-backend.onrender.com/projetos/${id}`, {
+        const res = await axios.get(`https://obravisor.onrender.com/projetos/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -77,7 +77,7 @@ const EditarProjeto = () => {
 
       console.log('🔍 Enviando payload:', payload);
 
-      await axios.put(`https://obravisor-backend.onrender.com/projetos/${id}`, payload, {
+      await axios.put(`https://obravisor.onrender.com/projetos/${id}`, payload, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

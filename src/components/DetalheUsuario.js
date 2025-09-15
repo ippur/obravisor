@@ -15,7 +15,7 @@ const DetalheUsuario = () => {
     const fetchUsuario = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get(`https://obravisor-backend.onrender.com/usuarios/${id}`, {
+        const res = await axios.get(`https://obravisor.onrender.com/usuarios/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsuario(res.data);
@@ -35,7 +35,7 @@ const DetalheUsuario = () => {
     if (window.confirm('Tem certeza que deseja excluir este usuário?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`https://obravisor-backend.onrender.com/usuarios/${id}`, {
+        await axios.delete(`https://obravisor.onrender.com/usuarios/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         alert('Usuário excluído com sucesso.');

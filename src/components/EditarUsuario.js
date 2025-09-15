@@ -17,7 +17,7 @@ const EditarUsuario = () => {
     const fetchUsuario = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get(`https://obravisor-backend.onrender.com/usuarios/${id}`, {
+        const res = await axios.get(`https://obravisor.onrender.com/usuarios/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -44,7 +44,7 @@ const EditarUsuario = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`https://obravisor-backend.onrender.com/usuarios/${id}`, formData, {
+      await axios.put(`https://obravisor.onrender.com/usuarios/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

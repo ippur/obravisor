@@ -34,7 +34,7 @@ const CadastroProjeto = () => {
         data_vencimento: formData.debito_status === 'Emitido' ? formData.data_vencimento : null,
       };
 
-      await axios.post('https://obravisor-backend.onrender.com/projetos', payload, {
+      await axios.post('https://obravisor.onrender.com/projetos', payload, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

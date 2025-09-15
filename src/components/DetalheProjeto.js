@@ -12,7 +12,7 @@ const DetalheProjeto = () => {
     const fetchProjeto = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get(`https://obravisor-backend.onrender.com/projetos/${id}`, {
+        const res = await axios.get(`https://obravisor.onrender.com/projetos/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -31,7 +31,7 @@ const DetalheProjeto = () => {
     if (window.confirm('Tem certeza que deseja excluir este projeto?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`https://obravisor-backend.onrender.com/projetos/${id}`, {
+        await axios.delete(`https://obravisor.onrender.com/projetos/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -19,7 +19,7 @@ const PerfilUsuario = () => {
           return;
         }
 
-        const res = await axios.get(`https://obravisor-backend.onrender.com/usuarios/${user.id}`, {
+        const res = await axios.get(`https://obravisor.onrender.com/usuarios/${user.id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -23,7 +23,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('https://obravisor-backend.onrender.com/auth/login', formData);
+      const res = await axios.post('https://obravisor.onrender.com/auth/login', formData);
       const { token, usuario } = res.data;
 	localStorage.setItem('token', token);
 	localStorage.setItem('tipo_usuario', usuario.tipo_usuario);

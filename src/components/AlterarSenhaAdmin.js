@@ -26,7 +26,7 @@ const AlterarSenhaAdmin = () => {
       const token = localStorage.getItem('token');
 
       await axios.put(
-        `https://obravisor-backend.onrender.com/usuarios/${id}/senha/admin`,
+        `https://obravisor.onrender.com/usuarios/${id}/senha/admin`,
         { nova_senha: novaSenha }, // <- CORREÇÃO: nome correto esperado pelo backend
         {
           headers: { Authorization: `Bearer ${token}` },

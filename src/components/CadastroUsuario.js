@@ -30,7 +30,7 @@ const CadastroUsuario = () => {
         crea: formData.crea || null,   // CREA opcional
       };
 
-      await axios.post('https://obravisor-backend.onrender.com/usuarios', payload, {
+      await axios.post('https://obravisor.onrender.com/usuarios', payload, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

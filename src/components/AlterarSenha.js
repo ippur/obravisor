@@ -24,7 +24,7 @@ const AlterarSenha = () => {
       const usuario = JSON.parse(localStorage.getItem('usuario'));
 
       await axios.put(
-        `https://obravisor-backend.onrender.com/usuarios/${usuario.id}/senha`,
+        `https://obravisor.onrender.com/usuarios/${usuario.id}/senha`,
         {
           senha_atual: senhaAtual,
           nova_senha: novaSenha,
