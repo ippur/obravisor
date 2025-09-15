@@ -1,7 +1,7 @@
 {
   "name": "obravisor",
   "version": "1.0.0",
-  "homepage": "https://obravisor-chi.vercel.app/",
+  "homepage": "https://obravisor.vercel.app/",
   "private": true,
   "engines": {
     "node": "22.x"
